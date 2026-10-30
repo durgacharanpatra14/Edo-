@@ -1,0 +1,6 @@
+{
+  "name": "EDO – Easy to Do All",
+  "description": "All-in-one travel and arrival ecosystem combining hotel booking, transit navigation, voice & text translation, and offline safety toolkit.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

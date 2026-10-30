@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="edo-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#083344" />
+      <stop offset="100%" stop-color="#0e7490" />
+    </linearGradient>
+    <linearGradient id="edo-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#0891b2" />
+    </linearGradient>
+    <linearGradient id="edo-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.2" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background with rounded corners -->
+  <rect width="512" height="512" rx="112" fill="url(#edo-bg)" />
+
+  <!-- Outer Glass Ring -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="url(#edo-glow)" stroke-width="6" opacity="0.6" stroke-dasharray="12 12" />
+  <circle cx="256" cy="256" r="150" fill="rgba(6, 182, 212, 0.08)" stroke="#22d3ee" stroke-width="3" opacity="0.8" />
+
+  <!-- Travel Compass / Navigation Path -->
+  <g filter="url(#glow)">
+    <!-- Main EDO Monogram / Compass Star -->
+    <path d="M256 90 L278 220 L400 256 L278 292 L256 422 L234 292 L112 256 L234 220 Z" fill="url(#edo-cyan)" />
+    <!-- Center Core -->
+    <circle cx="256" cy="256" r="28" fill="#ffffff" />
+    <circle cx="256" cy="256" r="14" fill="#0891b2" />
+  </g>
+
+  <!-- Navigation Dots -->
+  <circle cx="256" cy="140" r="5" fill="#ffffff" opacity="0.9" />
+  <circle cx="256" cy="372" r="5" fill="#ffffff" opacity="0.9" />
+  <circle cx="140" cy="256" r="5" fill="#ffffff" opacity="0.9" />
+  <circle cx="372" cy="256" r="5" fill="#ffffff" opacity="0.9" />
+
+  <!-- Subtle EDO Typography mark at bottom -->
+  <text x="256" y="470" text-anchor="middle" font-family="'Poppins', sans-serif" font-weight="700" font-size="34" letter-spacing="8" fill="#e0f2fe">EDO</text>
+</svg>
